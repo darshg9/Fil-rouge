@@ -5,8 +5,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./public/css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css"/>
+
 </head>
 <header>
     <nav class="navbar navbar-default" style="margin:0px; padding:0px">
@@ -49,10 +50,11 @@
             <div class="collapse navbar-collapse" id="MainBar"  >
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Acceuil</a></li>
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Acteurs</a></li>
+                    <li><a href="serieList.php">Séries</a></li>
+                    <li><a href="acteurList.php">Acteurs</a></li>
                     <li><a href="#">Forum</a></li>
-                    <li><a href="#">Moderation</a></li>
+                    <li><a href="moderation.php">Moderation</a></li>
+                    <li><a href="advancedSearch.php">Recherche Avancée</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right ">
                     <form class="navbar-form" role="search">

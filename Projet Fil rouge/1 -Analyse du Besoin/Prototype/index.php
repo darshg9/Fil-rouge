@@ -17,7 +17,8 @@
                     </div>
 
                     <div class="flexcol BoxInfo col-sm-offset-1 col-sm-5">
-                        <div class="flexcol BoxFrame">
+                        <div class="flexcol BoxFrame" style="background-color: rgba(200, 0, 0, 0.5);
+                             ">
                             <div class="BoxInfoText flexcol">
                                 <h4>Le Retour des dragons</h4>
                                 <p style="align-self: center">
@@ -47,35 +48,42 @@
             </div>
             <div class="flexrow container-fluid Box " style='background-image: url("http://lubiie.fr/wp-content/uploads/2015/02/vikings-saison-3.jpg");background-size: cover;background-repeat: no-repeat;background-position-y: 25%;'>
                 <!--<div class="BoxFrame fh">-->
+                <div class="BackColor">
 
-                <div class="BoxTitle col-sm-6" >
-                    <h1 style="font-size : 50px">Vikings</h1>
-                    <h3 style="padding-left:15px">Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis.</h3>
-                </div>
-
-                <div class="flexcol BoxInfo col-sm-offset-2 col-sm-4">
-                    <div class="flexcol BoxFrame BoxRed ">
-                        <h4>Le Retour des dragons</h4>
-                        <p>
-                            Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
-                            ultricies risus. Vestibulum non nibh sit amet massa luctus scelerisque. Nam ac efficitur
-                            neque, a vulputate velit. Phasellus finibus risus semper felis blandit rutrum. Aenean
-                            Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
-                            risus semper felis blandit rutrum. Aeneanneque, a vulputate velit. Phasellus finibus risus semper felis blandit rutrum. Aenean
-                            Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
-                            risus semper felis blandit rutrum. Aenean
-                        </p>
+                    <div class="BoxTitle col-sm-6" >
+                        <h1 style="font-size : 50px">Vikings</h1>
+                        <h3 style="padding-left:15px">Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis.</h3>
                     </div>
-                    <div style="align-self: flex-end">
-                        <a href="serieDetail.php" >
-                            <div class="btn btn-info" >
-                                <div class="BoxFrameBtn" >
-                                    <p>En Savoir plus</p>
-                                </div>
+
+                    <div class="flexcol BoxInfo col-sm-offset-1 col-sm-5">
+                        <div class="flexcol BoxFrame" style="background-color: rgba(200, 0, 0, 0.5);
+                             ">
+                            <div class="BoxInfoText flexcol">
+                                <h4>Le Retour des dragons</h4>
+                                <p style="align-self: center">
+                                    Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
+                                    ultricies risus. Vestibulum non nibh sit amet massa luctus scelerisque. Nam ac efficitur
+                                    neque, a vulputate velit. Phasellus finibus risus semper felis blandit rutrum. Aenean
+                                    Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
+                                    risus semper felis blandit rutrum. Aeneanneque, a vulputate velit. Phasellus finibus risus semper felis blandit rutrum. Aenean
+                                    Vivamus a varius augue. Donec non venenatis lectus. Mauris at porta felis. Quisque ac
+                                    risus semper felis blandit rutrum. Aenean
+                                </p>
                             </div>
-                        </a>
+
+                        </div>
+                        <div style="align-self: flex-end">
+                            <a href="serieDetail.php" >
+                                <div class="btn btn-info" >
+                                    <div class="BoxFrameBtn" >
+                                        <p>En Savoir plus</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div class="overflow">
                 <div class="flexrow">

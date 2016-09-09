@@ -1,24 +1,36 @@
-/********************|GENERAL|********************/
+/*******************|GENERAL|********************/
 *
 {
     font-family: 'Muli', sans-serif;
 
 }
 
+li{
+    padding:0px;
+    margin:0px;
+}
 input
 {
     border : 1px solid black;
-    margin: 2px;
 }
 img
 {
     height : auto;
     width : 100%;
 }
+.list-group-item
+{
+    margin:0px;
+    padding:5px;
+}
+a
+{
+    color:inherit;
+}
 a:hover
 {
     text-decoration: none;
-    color:white;
+    color:inherit;
 }
 .fh
 {
@@ -75,7 +87,7 @@ body
     padding: 5px;
     max-height : 100%;
     box-shadow: 0px 0px 10px 0px black;
-    background-color: rgba(200, 0, 0, 0.5);
+
 }
 
 .BoxInfoText
@@ -131,7 +143,7 @@ body
     margin-top:10px;
     padding: 5px;
     margin:10px 10px 10px 0px;
-    flex-grow: 1;
+    flex-grow: 0;
 
 }
 
@@ -148,12 +160,12 @@ ul
 {
     list-style-type: none ;
 }
-/*
+
 li
 {
     display : inline-block;
     padding:10px;
-}*/
+}
 
 .flexrow
 {
@@ -170,7 +182,7 @@ overflow
 {
 }
 
-/* Extra small devices (phones, up to 480px) */
+/*Extra small devices (phones, up to 480px)*/
 @media screen and (max-width: 767px) {
     *
     {
@@ -184,30 +196,34 @@ overflow
     {
         display:none;
     }
+    .smallBox
+    {
+        flex-grow: 1;
+
+    }
 }
-/* Small devices (tablets, 768px and up) */
+/*Small devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
 }
-/* tablets/desktops and up ----------- */
+tablets/desktops and up -----------
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-/* large desktops and up ----------- */
+large desktops and up -----------
 @media screen and (min-width: 1200px) {
-}
-
-/********************|Layout2|********************/
+}*/
+/*
+*******************|Layout2|********************/
 
 .Aside
 {
     background-color: rgba(255,255,255,0.4);
-    height : 560px;
     border-left: 1px solid rgba(0,0,0,0.1);
+    padding:20px;
 }
 
 .Rating
 {
-    align-items:  flex-end;
-
+    padding : 25px;
 }
 .detailDescription
 {
@@ -215,10 +231,8 @@ overflow
 }
 
 .glyphicon-star, .glyphicon-star-empty{
-    font-size: 25px;
-    line-height: 35px;
-    color: #999900;
-    width : 25px;
+    font-size: 40px;
+    color: gold;
 
 
 }
