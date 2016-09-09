@@ -109,14 +109,15 @@
                     </div>
                 </div>
             </div>
+            <!--/////////////////********|Aside|********\\\\\\\\\\\\\\\\\!-->
+
             <div class="col-sm-2 Aside">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <p>Dernières séries ajoutées</p>
+                        <p>Dernièrs acteurs ajoutées</p>
                     </div>
                     <div class="panel-body" style="padding:1px 0px 0px 0px; ">
 
-                        <!--/////////////////********|Liste Dernières série|********\\\\\\\\\\\\\\\\\!-->
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-info">
                                 <div class="flexrow" style="align-items:  center; justify-content: space-around;

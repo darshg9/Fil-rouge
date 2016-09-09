@@ -3,7 +3,7 @@
     <section>
         <div class="row ">
 
-            <div class="col-sm-8">
+            <div class="col-sm-10">
                 <div class="row flexrow" style="justify-content:  center;">
                     <h1>Panneau de modération</h1>
                 </div>
@@ -568,102 +568,31 @@
                 </div>
             </div>
             <!--/////////////////********|Aside Right|********\\\\\\\\\\\\\\\\\!-->
-            <div class="col-sm-4 Aside ">
-                <h3>Recherché avancée</h3>
+            <div class="col-sm-2 Aside ">
+                <h3>Dernièrs événement</h3>
                 <hr>
-                <form action="/" method="get" class="" role="form">
-
-                    <div class="form-group">
-                        <div class="col-sm-6" style="padding:0px">
-                            <input type="text" class="form-control" name="search">
-                        </div>
-                        <div class="col-sm-6" style="padding:0px" >
-                            <input type="submit" class="form-control" value="Recherche">
-                        </div>
-                    </div>
-                    <hr>
-                    <h3>Type de contenu recherché</h3>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="serie" value="">
-                            Série
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="episode" value="">
-                            Episodes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="acteur" value="">
-                            Acteurs
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="realisateur" value="">
-                            Réalisateurs
-                        </label>
-                    </div>
-                    <hr>
-
-                    <h3>Genre</h3>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="episode" value="">
-                            Policier
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="acteur" value="">
-                            Science-Fiction
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="realisateur" value="">
-                            Médiéval
-                        </label>
-                    </div>
-                    <hr>
-
-                    <h3>Autres filtres</h3>
-                    <div class="form-group">
-                        <label class="control-label">Année de début :</label>
-                        <div>
-                            <input type="date" class="form-control" name="dateStart">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Pays</label>
-                        <select class="form-control" name ="pays">
-                            <option value="">France</option>
-                            <option value="">Allemagne</option>
-                            <option value="">Etats-Unis</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Status</label>
-                        <select class="form-control" name ="pays">
-                            <option value="">En cours</option>
-                            <option value="">Terminé</option>
-                        </select>
-                    </div>
-
-
-                    <hr>
-
-
-
-
-
-
-                </form>
+                <div class="list-group">
+                    <li class="list-group-item flexrow">
+                        <p>Série :</p>
+                        <a href="#">Titre</a>
+                    </li>
+                    <li class="list-group-item flexrow">
+                        <p>Acteur :</p>
+                        <a href="#">Nom Prénom</a>
+                    </li>
+                    <li class="list-group-item flexrow">
+                        <p>Commentiare :</p>
+                        <a href="#">Auteur</a>
+                    </li>
+                    <li class="list-group-item flexrow">
+                        <p>Série :</p>
+                        <a href="#">Titre</a>
+                    </li>
+                    <li class="list-group-item flexrow">
+                        <p>Commentaire :</p>
+                        <a href="#">Auteur</a>
+                    </li>
+                </div>
             </div>
         </div>
 

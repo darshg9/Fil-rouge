@@ -50,6 +50,7 @@
             <div class="collapse navbar-collapse" id="MainBar"  >
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Acceuil</a></li>
+                    <li><a href="wall.php">Mon Wall</a></li>
                     <li><a href="serieList.php">Séries</a></li>
                     <li><a href="acteurList.php">Acteurs</a></li>
                     <li><a href="#">Forum</a></li>
