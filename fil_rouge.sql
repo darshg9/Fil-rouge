@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 16 Septembre 2016 à 12:47
+-- Généré le :  Ven 16 Septembre 2016 à 13:14
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -208,8 +208,8 @@ CREATE TABLE IF NOT EXISTS `serie` (
 --
 
 INSERT INTO `serie` (`id`, `realisateur_id`, `auteur_proposition_id`, `Titre`, `Pays`, `Annee_debut`, `Status`, `Note`, `Synopsis`, `url`) VALUES
-(1, 1, 1, 'Game of thrones', 'Amerique', 2012, 'En cours', 5, 'La série suit l’histoire des membres de plusieurs familles nobles, dans une guerre civile pour conquérir le Trône de Fer', NULL),
-(2, 3, 2, 'Viking', 'Amerique', 2009, 'En cours', 4, 'La série suit les exploits d''un groupe de Vikings mené par Ragnar Lothbrok.', NULL);
+(1, 1, 1, 'Game of thrones', 'Amerique', 2012, 'En cours', 5, 'La série suit l’histoire des membres de plusieurs familles nobles, dans une guerre civile pour conquérir le Trône de Fer', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU0go-PgUEJaOmOUeQiiGz-2AgofQMs8kbiCnjeLOXDI-XiQQg'),
+(2, 3, 2, 'Viking', 'Amerique', 2009, 'En cours', 4, 'La série suit les exploits d''un groupe de Vikings mené par Ragnar Lothbrok.', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQYJ_ilZAC8RVhPVsIDxymVE0Xq9gb0PNdsolH__uxgTK9Mnpdww');
 
 -- --------------------------------------------------------
 
