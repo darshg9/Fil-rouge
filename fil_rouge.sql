@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 16 Septembre 2016 à 10:29
+-- Généré le :  Ven 16 Septembre 2016 à 12:01
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -43,14 +43,14 @@ CREATE TABLE IF NOT EXISTS `acteur` (
 --
 
 INSERT INTO `acteur` (`id`, `auteur_proposition_id`, `Nom`, `Prenom`, `Nationalite`, `Date_naissance`, `url`) VALUES
-(1, 2, 'Pitt', 'Brad', 'Americaine', '1963-12-19 04:05:00', 'http://i.huffpost.com/gen/1571920/thumbs/o-BRAD-PITT-900.jpg?7'),
-(2, 1, 'Turner', 'Sophie', 'Americaine', '1996-02-21 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs_2pumMPqDp3skEh0iQyJh58Toc1jRiuJeMT3GCqq1K-GjIFl'),
+(1, 2, 'Coster-Waldau', 'Nikolaj ', 'Americaine', '1970-07-21 04:05:00', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCDCrtfeBrVkLcgKJJSzX8v0o5WqFdOpQG_jWCka2O56rrxOpmQ'),
+(2, 1, 'Turner', 'Sophie', 'Americaine', '1996-02-21 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQWWq_H8zWWLImRpoY4jKLj5fxG6jk-lLz8VLtt6lVwZEh_gQHJQ'),
 (3, 2, 'Headey', 'Lena', 'Americaine', '1973-10-03 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfh-Od719C73aI3cVl3J2QhW87HC2xAUFYAte15atIG_BPgPlhZQ'),
 (4, 1, 'Dinklage', 'Peter', 'Americaine', '1969-06-11 00:00:00', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASaJkOE84vKzlQzD4obk8n4S54L9xoxDmdumX8n9pEBr1Fc_G'),
 (5, 1, 'Williams', 'Maisie', 'Americaine', '1997-04-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHqDUWdqDgoDDo0r8E-y-e_WahqkTMQQi9ySmL-OAy2Cz0II73'),
-(6, 1, 'Fanthou', 'Paul', 'Française', '1989-03-26 00:00:00', 'http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/actu-people/people-anglo-saxons/20160204-que-sont/mister-t-dans-l-agence-tous-risques/5067091-1-fre-FR/Mister-T-dans-l-Agence-tous-risques_exact1024x768_p.jpg'),
-(7, 2, 'Diesel', 'Vin', 'Americaine', '1978-09-04 00:00:00', 'http://www.celebres.fr/wp-content/uploads/2016/04/vin-diesel-.jpg'),
-(8, 1, 'Mckinney', 'Kurt', 'Americaine', '1962-02-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiH0_RexVNjvM9GCdmRmCUMAxTGPkAI_n7FEeau5EFVUhV9tZQxw');
+(6, 1, 'Fimmel', 'Travis ', 'Australienne', '1979-07-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSLoafm6WBngSIMnHfmcNgejpCJu81eLmol3GP5Akeu3yEqIMYjQ'),
+(7, 2, 'Winnick', 'Katheryn', 'Americaine', '1977-12-17 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ-eg8LPbJMWeZWscYFsc7pqbzVU_kwnCicmsl_VG9rqIqEShk'),
+(8, 1, 'Standen', 'Clive ', 'Britannique ', '1981-07-22 00:00:00', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-F04lg-JXcn0CJds9Skk4EVW2JwVJ8Uw-vIRmL9rGMcSkrSFkNg');
 
 -- --------------------------------------------------------
 
@@ -144,15 +144,21 @@ CREATE TABLE IF NOT EXISTS `role` (
   PRIMARY KEY (`id`),
   KEY `IDX_57698A6ADA6F574A` (`acteur_id`),
   KEY `IDX_57698A6AD94388BD` (`serie_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `role`
 --
 
 INSERT INTO `role` (`id`, `acteur_id`, `serie_id`, `Nom`) VALUES
-(1, 4, 1, 'John Doe'),
-(2, 4, 1, 'Robert Wall');
+(1, 1, 1, 'Jaime Lannister'),
+(2, 2, 1, 'Sansa Stark'),
+(3, 3, 1, 'Cersei Lannister'),
+(4, 4, 1, 'Tyrion Lannister'),
+(5, 5, 1, 'Arya Stark'),
+(6, 6, 1, 'Ragnar Lothbrok'),
+(7, 7, 2, 'Lagertha'),
+(8, 8, 2, 'Rollo, le frère de Ragnar');
 
 -- --------------------------------------------------------
 
