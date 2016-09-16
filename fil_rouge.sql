@@ -1,9 +1,9 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 15 Septembre 2016 à 16:15
+-- Généré le :  Ven 16 Septembre 2016 à 10:29
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -36,19 +36,21 @@ CREATE TABLE IF NOT EXISTS `acteur` (
   `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_EAFAD3625E7250B` (`auteur_proposition_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `acteur`
 --
 
 INSERT INTO `acteur` (`id`, `auteur_proposition_id`, `Nom`, `Prenom`, `Nationalite`, `Date_naissance`, `url`) VALUES
-(1, 2, 'Pitt', 'Brad', 'Americaine', '2011-12-19 04:05:00', NULL),
-(2, 1, 'Turner', 'Sophie', 'Americaine', '2011-09-04 00:00:00', NULL),
-(3, 2, 'Headey', 'Lena', 'Americaine', '1999-09-05 00:00:00', NULL),
-(4, 1, 'Dinklage', 'Peter', 'Americaine', '1996-09-02 00:00:00', NULL),
-(5, 1, 'Willimas', 'Maisie', 'Americaine', '1999-09-04 00:00:00', NULL),
-(6, 1, 'Fanthou', 'Paul', 'Française', '1989-03-26 00:00:00', NULL);
+(1, 2, 'Pitt', 'Brad', 'Americaine', '1963-12-19 04:05:00', 'http://i.huffpost.com/gen/1571920/thumbs/o-BRAD-PITT-900.jpg?7'),
+(2, 1, 'Turner', 'Sophie', 'Americaine', '1996-02-21 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs_2pumMPqDp3skEh0iQyJh58Toc1jRiuJeMT3GCqq1K-GjIFl'),
+(3, 2, 'Headey', 'Lena', 'Americaine', '1973-10-03 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfh-Od719C73aI3cVl3J2QhW87HC2xAUFYAte15atIG_BPgPlhZQ'),
+(4, 1, 'Dinklage', 'Peter', 'Americaine', '1969-06-11 00:00:00', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASaJkOE84vKzlQzD4obk8n4S54L9xoxDmdumX8n9pEBr1Fc_G'),
+(5, 1, 'Williams', 'Maisie', 'Americaine', '1997-04-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHqDUWdqDgoDDo0r8E-y-e_WahqkTMQQi9ySmL-OAy2Cz0II73'),
+(6, 1, 'Fanthou', 'Paul', 'Française', '1989-03-26 00:00:00', 'http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/actu-people/people-anglo-saxons/20160204-que-sont/mister-t-dans-l-agence-tous-risques/5067091-1-fre-FR/Mister-T-dans-l-Agence-tous-risques_exact1024x768_p.jpg'),
+(7, 2, 'Diesel', 'Vin', 'Americaine', '1978-09-04 00:00:00', 'http://www.celebres.fr/wp-content/uploads/2016/04/vin-diesel-.jpg'),
+(8, 1, 'Mckinney', 'Kurt', 'Americaine', '1962-02-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiH0_RexVNjvM9GCdmRmCUMAxTGPkAI_n7FEeau5EFVUhV9tZQxw');
 
 -- --------------------------------------------------------
 
@@ -114,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `realisateur` (
   `Nom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_47933EFE54231355` (`Nom`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
 
 --
 -- Contenu de la table `realisateur`
@@ -122,6 +124,7 @@ CREATE TABLE IF NOT EXISTS `realisateur` (
 
 INSERT INTO `realisateur` (`id`, `Nom`) VALUES
 (2, 'Cameron'),
+(6, 'Chan'),
 (3, 'Mctiernan'),
 (5, 'Rhee'),
 (4, 'Singer'),
