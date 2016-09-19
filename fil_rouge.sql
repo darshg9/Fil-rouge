@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 16 Septembre 2016 à 13:14
+-- Généré le :  Lun 19 Septembre 2016 à 14:07
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -36,21 +36,27 @@ CREATE TABLE IF NOT EXISTS `acteur` (
   `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_EAFAD3625E7250B` (`auteur_proposition_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=15 ;
 
 --
 -- Contenu de la table `acteur`
 --
 
 INSERT INTO `acteur` (`id`, `auteur_proposition_id`, `Nom`, `Prenom`, `Nationalite`, `Date_naissance`, `url`) VALUES
-(1, 2, 'Coster-Waldau', 'Nikolaj ', 'Americaine', '1970-07-21 04:05:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM820lE28-pwtCzuaHCArB7d71mBNHiIkXjgmBKre2gqiUwUCI'),
-(2, 1, 'Turner', 'Sophie', 'Americaine', '1996-02-21 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQWWq_H8zWWLImRpoY4jKLj5fxG6jk-lLz8VLtt6lVwZEh_gQHJQ'),
-(3, 2, 'Headey', 'Lena', 'Americaine', '1973-10-03 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfh-Od719C73aI3cVl3J2QhW87HC2xAUFYAte15atIG_BPgPlhZQ'),
-(4, 1, 'Dinklage', 'Peter', 'Americaine', '1969-06-11 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXATp3SZtm3u7Mr0JSNTuSzaRuLOZeCcYU51KLm9AaTCQLb_UU_A'),
-(5, 1, 'Williams', 'Maisie', 'Americaine', '1997-04-15 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHqDUWdqDgoDDo0r8E-y-e_WahqkTMQQi9ySmL-OAy2Cz0II73'),
-(6, 1, 'Fimmel', 'Travis ', 'Australienne', '1979-07-15 00:00:00', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGL8ZxMse1R5QeKINSYA6uMT7gM0eNHNISPh3KOmNll7RLiNYG'),
-(7, 2, 'Winnick', 'Katheryn', 'Americaine', '1977-12-17 00:00:00', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ-eg8LPbJMWeZWscYFsc7pqbzVU_kwnCicmsl_VG9rqIqEShk'),
-(8, 1, 'Standen', 'Clive ', 'Britannique ', '1981-07-22 00:00:00', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSzyNhOnm-fnvovzS2yeXPC_gfpDMhC7eIGM7dDb4wU7UwQBf-w');
+(1, 2, 'Coster-Waldau', 'Nikolaj ', 'Americaine', '1970-07-21 04:05:00', 'http://cdn.wegotthiscovered.com/wp-content/uploads/Coster+Waldau+at+Mama+premiere+JPZdpmOnEWxl.jpg'),
+(2, 1, 'Turner', 'Sophie', 'Americaine', '1996-02-21 00:00:00', 'http://www.comingsoon.net/assets/uploads/2015/05/Turner-Bar-640.jpg'),
+(3, 2, 'Headey', 'Lena', 'Americaine', '1973-10-03 00:00:00', 'http://www.thevibe.fr/upload/external/thevibe577659973e2f9.jpg'),
+(4, 1, 'Dinklage', 'Peter', 'Americaine', '1969-06-11 00:00:00', 'http://www.peterdinklage.tv/wp-content/uploads/2015/05/peter-dinklage2.jpg'),
+(5, 1, 'Williams', 'Maisie', 'Americaine', '1997-04-15 00:00:00', 'http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/i/2015/06/16/maisie-williams.jpg?itok=6lBByS7D'),
+(6, 1, 'Fimmel', 'Travis ', 'Australienne', '1979-07-15 00:00:00', 'http://1.fwcdn.pl/ph/90/55/659055/553153_1.1.jpg'),
+(7, 2, 'Winnick', 'Katheryn', 'Americaine', '1977-12-17 00:00:00', 'http://media.comicbook.com/uploads1/2014/11/katheryn-winnick-vikings-207-clips-history-111410.jpg'),
+(8, 1, 'Standen', 'Clive ', 'Britannique ', '1981-07-22 00:00:00', 'http://cdn.history.com/sites/2/2015/03/vikings_s3e5_gallery_1.jpg'),
+(9, 2, 'Chiklis', 'Michael', 'Américaine', '1963-09-30 00:00:00', 'http://cdn.hitfix.com/photos/5621653/Michael-Chiklis_article_story_large.jpg'),
+(10, 1, 'Goggins', 'Walton', 'Américaine', '1971-11-10 00:00:00', 'http://walton-goggins.net/imgs/albums/SHOOTS/011/001~3.jpg'),
+(11, 2, 'Johnson', 'Kenneth', 'Américaine', '1963-07-13 00:00:00', 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1NzI2NzgwOV5BMl5BanBnXkFtZTcwOTk1MDQ5OQ@@._V1_.jpg'),
+(12, 2, 'Rami', 'Malek', 'Americaine', '1981-05-12 00:00:00', 'http://www.albawaba.com/sites/default/files/im/rami-malek-robot.jpg'),
+(13, 1, 'Slater', 'Christian', 'Americaine', '1969-08-18 00:00:00', 'http://cdn.hitfix.com/photos/5799692/222222_article_story_large.png'),
+(14, 2, 'Doubleday', 'Portia', 'Americaine', '1988-06-22 00:00:00', 'http://www.usanetwork.com/sites/usanetwork/files/styles/full_episodes_633x356/public/2016/07/160616_3052960_Portia_Doubleday_Talks_Mr__Robot_Season_2.jpg-itok%3DDCPcOJJ4_edit_0.jpg?itok=IqVWZcTS');
 
 -- --------------------------------------------------------
 
@@ -68,15 +74,17 @@ CREATE TABLE IF NOT EXISTS `critique` (
   PRIMARY KEY (`id`),
   KEY `IDX_1F950324D94388BD` (`serie_id`),
   KEY `IDX_1F95032460BB6FE6` (`auteur_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `critique`
 --
 
 INSERT INTO `critique` (`id`, `serie_id`, `auteur_id`, `Contenu`, `Date_critique`, `Note`) VALUES
-(1, 1, 2, 'Le Lorem Ipsum est simplement du faux texte employé dans la ', '2016-09-01 00:00:00', 4),
-(2, 2, 1, 'On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions.', '2016-09-01 00:00:00', 2);
+(1, 1, 2, 'Une série pleine de rebondissements mais certains épisodes traînent en longueur.', '2016-09-01 14:18:26', 7),
+(2, 2, 1, 'Une immersion immédiate, des scène qui se succèdent, et nous captivent par la nouveauté qu''apporte ces civilisations scandinaves méconnues du grand public.', '2016-09-01 11:22:13', 8),
+(3, 3, 2, 'Tout simplement la meilleure série que j''ai jamais vue....rarement une série n''aura été aussi loin dans l''analyse psychologique de son personnage principal Vic Mackey avec ses bons côtés mais surtout ses côtés les plus détestables.', '2016-09-07 10:17:12', 10),
+(4, 4, 1, 'Série très originale et inventive qui nous plonge dans la face cachée d''Internet.', '2015-11-21 13:12:18', 9);
 
 -- --------------------------------------------------------
 
@@ -95,15 +103,16 @@ CREATE TABLE IF NOT EXISTS `episode` (
   PRIMARY KEY (`id`),
   KEY `IDX_DDAA1CDAF965414C` (`saison_id`),
   KEY `IDX_DDAA1CDA5E7250B` (`auteur_proposition_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `episode`
 --
 
 INSERT INTO `episode` (`id`, `saison_id`, `auteur_proposition_id`, `Titre`, `Duree`, `Resume`, `Diffusions_futures`) VALUES
-(2, 1, 1, 'Les vacances', '00:00:55', 'Le Lorem Ipsum est simplement du faux texte employé dans la. ', 'Prévue pour novembre 2016'),
-(3, 1, 1, 'La revanche', '00:00:55', 'par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 'Prévue pour Décembre 2016');
+(2, 1, 1, 'Les vacances', '00:00:55', 'Chaque protagoniste est parti en vacances se ressourcer.', 'Prévue pour novembre 2016'),
+(3, 1, 1, 'La revanche', '00:00:55', 'La décision du juge n''est pas au goût de tout le monde.', 'Prévue pour décembre 2016'),
+(4, 3, 3, 'Le rebondissement', '00:00:55', 'L''organisation ne se décourage et cherche tous les moyens pour éliminer nos héros.', 'Prévue pour janvier 2017');
 
 -- --------------------------------------------------------
 
@@ -116,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `realisateur` (
   `Nom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_47933EFE54231355` (`Nom`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
 
 --
 -- Contenu de la table `realisateur`
@@ -127,6 +136,7 @@ INSERT INTO `realisateur` (`id`, `Nom`) VALUES
 (6, 'Chan'),
 (3, 'Mctiernan'),
 (5, 'Rhee'),
+(7, 'Shawn Ryan'),
 (4, 'Singer'),
 (1, 'Tarantino');
 
@@ -144,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   PRIMARY KEY (`id`),
   KEY `IDX_57698A6ADA6F574A` (`acteur_id`),
   KEY `IDX_57698A6AD94388BD` (`serie_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=15 ;
 
 --
 -- Contenu de la table `role`
@@ -158,7 +168,13 @@ INSERT INTO `role` (`id`, `acteur_id`, `serie_id`, `Nom`) VALUES
 (5, 5, 1, 'Arya Stark'),
 (6, 6, 1, 'Ragnar Lothbrok'),
 (7, 7, 2, 'Lagertha'),
-(8, 8, 2, 'Rollo, le frère de Ragnar');
+(8, 8, 2, 'Rollo, le frère de Ragnar'),
+(9, 9, 3, 'Vic Mackey'),
+(10, 10, 3, 'Shane Vendrell'),
+(11, 11, 3, 'Lem Lemansky'),
+(12, 12, 4, 'Elliot Alderson'),
+(13, 13, 4, 'Mr.Robot'),
+(14, 14, 4, 'Angela Moss');
 
 -- --------------------------------------------------------
 
@@ -172,14 +188,17 @@ CREATE TABLE IF NOT EXISTS `saison` (
   `Denomination` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_C0D0D586D94388BD` (`serie_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `saison`
 --
 
 INSERT INTO `saison` (`id`, `serie_id`, `Denomination`) VALUES
-(1, 1, 'Aventures');
+(1, 1, 'Heroic-Fantasy'),
+(2, 2, 'Aventures'),
+(3, 3, 'Policier'),
+(4, 4, 'Espionnage');
 
 -- --------------------------------------------------------
 
@@ -201,15 +220,17 @@ CREATE TABLE IF NOT EXISTS `serie` (
   PRIMARY KEY (`id`),
   KEY `IDX_AA3A9334F1D8422E` (`realisateur_id`),
   KEY `IDX_AA3A93345E7250B` (`auteur_proposition_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `serie`
 --
 
 INSERT INTO `serie` (`id`, `realisateur_id`, `auteur_proposition_id`, `Titre`, `Pays`, `Annee_debut`, `Status`, `Note`, `Synopsis`, `url`) VALUES
-(1, 1, 1, 'Game of thrones', 'Amerique', 2012, 'En cours', 5, 'La série suit l’histoire des membres de plusieurs familles nobles, dans une guerre civile pour conquérir le Trône de Fer', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU0go-PgUEJaOmOUeQiiGz-2AgofQMs8kbiCnjeLOXDI-XiQQg'),
-(2, 3, 2, 'Viking', 'Amerique', 2009, 'En cours', 4, 'La série suit les exploits d''un groupe de Vikings mené par Ragnar Lothbrok.', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQYJ_ilZAC8RVhPVsIDxymVE0Xq9gb0PNdsolH__uxgTK9Mnpdww');
+(1, 1, 1, 'Game of thrones', 'Etats-Unis', 2012, 'En cours', 5, 'La série suit l’histoire des membres de plusieurs familles nobles, dans une guerre civile pour conquérir le Trône de Fer', 'http://www.wallpapermade.com/images/wallpapers/originals/game-of-thrones-ned-stark-on-the-iron-throne-wallpaper-3826.jpg'),
+(2, 3, 2, 'Viking', 'Etats-Unis', 2009, 'En cours', 4, 'La série suit les exploits d''un groupe de Vikings mené par Ragnar Lothbrok.', 'http://www.100hdwallpapers.com/wallpapers/1920x1080/vikings_2013_tv_series-hd_wallpapers.jpg'),
+(3, 7, 2, 'The Shield', 'Etats-Unis', 2002, 'Achevée', 5, 'Vic Mackey, Inspecteur de Police de Los Angeles dans le quartier fictif et malfamé de Farmington, est aussi le chef de la « Brigade de choc » (« Strike Team »). ', 'http://cdn.collider.com/wp-content/uploads/2015/08/the-shield-slice-600x198.jpg'),
+(4, 4, 1, 'Mr.Robot', 'Etats-Unis', 2015, 'En cours', 7, 'Elliot Alderson est un jeune informaticien vivant à New York, qui travaille en tant qu''ingénieur en sécurité informatique pour Allsafe Security. ', 'http://media.begeek.fr/2015/12/mr-robot.jpg');
 
 -- --------------------------------------------------------
 
@@ -232,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `Description` longtext COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_1D1C63B381604CAB` (`Pseudo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
 
 --
 -- Contenu de la table `utilisateur`
@@ -240,7 +261,8 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 
 INSERT INTO `utilisateur` (`id`, `Pseudo`, `Nom`, `Prenom`, `Mail`, `Date_naissance`, `Ville`, `Twitter`, `Facebook`, `Avatar`, `Signature`, `Description`) VALUES
 (1, 'Dupjean', 'Dupond', 'Jean', 'dupond.jean@yahoo.fr', '2016-02-02 00:00:00', 'Lille', 'dupond.jean@twitter.com', 'dupond.jean@facebook.com', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCEPSecLfG2zFCDu-NcZrS47iEUvvOpmw_N5vCwc2utx8o03I0', 'Dupond', 'Passioné de série depuis toujours.'),
-(2, 'OlivAtt', 'Atton', 'Olivier', 'atton.olivier@hotmail.fr', '2016-09-12 00:00:00', 'Lyon', 'atton.olivier@twitter.com', 'atton.olivier@facebook.com', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkhR6ViO7UdN0hb4jzAh8dX9kxgXoGiu4pOQakp7pXLaYRYRc7-A', 'Atton', 'J''adore les séries.');
+(2, 'OlivAtt', 'Atton', 'Olivier', 'atton.olivier@hotmail.fr', '2016-09-12 00:00:00', 'Lyon', 'atton.olivier@twitter.com', 'atton.olivier@facebook.com', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkhR6ViO7UdN0hb4jzAh8dX9kxgXoGiu4pOQakp7pXLaYRYRc7-A', 'Atton', 'J''adore les séries.'),
+(3, 'tenma', 'Louise', 'Thelma', 'louise.thelma@yahoo.fr', '1985-09-05 00:00:00', 'Bordeaux', 'louise@twitter.com', 'louise@facebook.com', 'http://66.media.tumblr.com/avatar_4e71782bc4ea_128.png', 'Louise', 'Bonjour à tous, je suis passionnée de séries, cinéma, lecture et promenades.');
 
 -- --------------------------------------------------------
 
@@ -261,7 +283,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur_episode` (
 --
 
 INSERT INTO `utilisateur_episode` (`utilisateur_id`, `episode_id`) VALUES
-(1, 2);
+(1, 4),
+(2, 2),
+(3, 3);
 
 -- --------------------------------------------------------
 
@@ -282,7 +306,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur_serie` (
 --
 
 INSERT INTO `utilisateur_serie` (`utilisateur_id`, `serie_id`) VALUES
-(1, 2);
+(1, 2),
+(2, 3),
+(3, 4);
 
 --
 -- Contraintes pour les tables exportées
